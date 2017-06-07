@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/facebook_label"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:text="FACEBOOK"
+        android:textStyle="bold"
+        android:background="@color/com_facebook_blue"
+        android:textColor="@color/white"/>
+    <RelativeLayout
+        android:id="@+id/facebook_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="12dp"
+        android:layout_below="@id/facebook_label"
+        android:background="@color/com_facebook_blue"
+        android:visibility="gone">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/facebook_login_button"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="6dp"
+                android:visibility="visible"
+                android:layout_gravity="center_horizontal" />
+            <TextView
+                android:id="@+id/facebook_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:layout_below="@id/facebook_login_button"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/google_label"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_below="@id/facebook_info_layout"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:text="GOOGLE +"
+        android:textStyle="bold"
+        android:background="@color/google_red"
+        android:textColor="@color/white"/>
+    <RelativeLayout
+        android:id="@+id/google_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="12dp"
+        android:layout_below="@id/google_label"
+        android:background="@color/google_red"
+        android:visibility="gone">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/google_login_button"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="6dp"
+                android:visibility="visible"
+                android:layout_gravity="center_horizontal" />
+            <TextView
+                android:id="@+id/google_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:layout_below="@id/google_login_button"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/twitter_label"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_below="@id/google_info_layout"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:text="TWITTER"
+        android:textStyle="bold"
+        android:background="@color/tw__blue_default"
+        android:textColor="@color/white"/>
+    <RelativeLayout
+        android:id="@+id/twitter_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="12dp"
+        android:layout_below="@id/twitter_label"
+        android:background="@color/tw__blue_default"
+        android:visibility="gone">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+            <com.twitter.sdk.android.core.identity.TwitterLoginButton
+                android:id="@+id/twitter_login_button"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="6dp"
+                android:visibility="visible"
+                android:layout_gravity="center_horizontal" />
+            <TextView
+                android:id="@+id/twitter_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:layout_below="@id/twitter_login_button"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

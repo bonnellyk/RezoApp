@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "425186469953",
+    "project_id": "rezo-68bf0"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:425186469953:android:14f5337efb1610ca",
+        "android_client_info": {
+          "package_name": "com.rezoapp.rezo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "425186469953-fqlsv8co58jjt7jsbd6d5mt64cd15vae.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "425186469953-rdmgo7e73534a8hkotnsp92ljt2miab6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rezoapp.rezo",
+            "certificate_hash": "bd12f555ad62be86c1350f2000a68d9dda4828e1"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLPrWB3o-Oui0BFZWRseTH-rqNraAmtjo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
